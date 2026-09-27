@@ -65,6 +65,10 @@
     .work-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px #1c2b261a; }
     .drive { background: #dbe1d2; }
     .mixdown { background: #d9d8ce; }
+    .rhythm { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr; min-height: 340px; background: #d8e2df; }
+    .rhythm .card-top { grid-column: 1 / -1; }
+    .rhythm .card-figure { grid-column: 2; grid-row: 2; border-radius: 50%; background: #e6edeb; box-shadow: 13px 13px 0 #a8bcb5; transform: rotate(8deg); }
+    .rhythm .card-copy { grid-column: 1; grid-row: 2; align-self: end; }
     .card-top { display: flex; justify-content: space-between; align-items: start; gap: 24px; }
     .card-arrow { font-size: 32px; line-height: .8; }
     .card-figure { align-self: center; display: flex; align-items: center; justify-content: center; width: 145px; height: 145px; border: 1.5px solid var(--ink); transform: rotate(-10deg); }
@@ -129,6 +133,7 @@
       h1 { font-size: clamp(51px, 13vw, 74px); }
       .work-grid { grid-template-columns: 1fr; }
       .work-card { min-height: 350px; }
+      .rhythm { display: flex; }
       .card-figure { width: 105px; height: 105px; }
       .card-figure svg { width: 60px; height: 60px; }
       .diagram-label { top: 18px; }
@@ -194,6 +199,11 @@
           <div class="card-top"><span class="eyebrow">02 / Music</span><span class="card-arrow" aria-hidden="true">↗</span></div>
           <div class="card-figure" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><path d="M11 39v2m9-12v22m9-35v48m9-36v24m9-42v60m9-48v36m9-28v20m9-11v2" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
           <div><h3>Mixdown</h3><p>A music platform from Menlo Parking. A place to bring the pieces together and keep the music moving.</p></div>
+        </a>
+        <a class="work-card rhythm" href="https://rhythm.menloparking.com/">
+          <div class="card-top"><span class="eyebrow">03 / Agency &amp; attention</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          <div class="card-figure" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="29" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="40" r="4" fill="currentColor"/><path d="M40 16v20m4 4h21M40 64v-8M16 40h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div class="card-copy"><h3>Rhythm</h3><p>Meeting scheduling today. Exploring a next-generation system for managing personal and team agency and attention.</p></div>
         </a>
       </div>
     </section>
