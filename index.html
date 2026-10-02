@@ -88,13 +88,15 @@
     .practice-item p { max-width: 500px; margin: 0; color: var(--muted); line-height: 1.5; }
 
     .clients { padding-block: 116px; }
-    .client-feature { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; min-height: 410px; margin-top: 62px; padding: clamp(28px, 4vw, 60px); background: #e5e0d4; }
+    .client-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 62px; }
+    .client-feature { display: flex; flex-direction: column; gap: 40px; padding: clamp(28px, 3.5vw, 50px); background: #e5e0d4; }
+    .client-feature:nth-child(2) { background: #dde2d6; }
     .client-main { display: flex; flex-direction: column; align-items: start; justify-content: space-between; }
-    .client-main h3 { max-width: 540px; margin: 30px 0 14px; font-size: clamp(48px, 6vw, 86px); line-height: .98; font-weight: 550; letter-spacing: -.075em; }
+    .client-main h3 { max-width: 540px; margin: 30px 0 14px; font-size: clamp(40px, 4.4vw, 64px); line-height: .98; font-weight: 550; letter-spacing: -.075em; overflow-wrap: anywhere; }
     .client-main p { max-width: 490px; font-size: 17px; line-height: 1.5; }
     .client-link { display: inline-flex; gap: 14px; align-items: center; padding-bottom: 5px; border-bottom: 1px solid currentColor; text-decoration: none; font-size: 14px; font-weight: 650; }
     .client-link:hover { gap: 20px; }
-    .client-services { align-self: end; border-top: 1px solid var(--ink); }
+    .client-services { margin-top: auto; border-top: 1px solid var(--ink); }
     .client-service { display: grid; grid-template-columns: 36px 1fr; gap: 16px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid #b8b6a9; }
     .client-service strong { display: block; margin-bottom: 5px; font-size: clamp(20px, 2.2vw, 28px); font-weight: 550; letter-spacing: -.04em; }
     .client-service span:last-child { color: var(--muted); font-size: 14px; }
@@ -137,7 +139,7 @@
       .work-card { min-height: 380px; }
       .practice .wrap { padding-block: 80px; }
       .practice-grid { margin-top: 40px; }
-      .client-feature { grid-template-columns: 1fr; gap: 50px; margin-top: 40px; }
+      .client-grid { grid-template-columns: 1fr; margin-top: 40px; }
       .client-main { gap: 30px; }
       .people-body { margin-top: 40px; }
     }
@@ -249,6 +251,7 @@
         <span class="eyebrow">04 / Client partnerships</span>
         <h2 id="clients-title">Good work is <em>better together.</em></h2>
       </div>
+      <div class="client-grid">
       <div class="client-feature">
         <div class="client-main">
           <span class="eyebrow">In good company / The Search Bar</span>
@@ -275,6 +278,7 @@
         <div class="client-services" aria-label="Menlo Parking services used by WorshipTeam.com">
           <div class="client-service"><span class="eyebrow">01</span><div><strong>MP Cloud</strong><span>Cloud computing infrastructure</span></div></div>
         </div>
+      </div>
       </div>
     </section>
 
